@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Defining References -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +10,12 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+<!-- Top Navigation Bar & References to other pages -->
 <body>
     <header>
         <div class="logo" title="University Management System">
             <img src="./images/logo.png" alt="">
-            <h2>U<span class="danger">M</span>S</h2>
+            <h2>G<span class="danger">a</span>y</h2>
         </div>
         <div class="navbar">
             <a href="index.html" class="active">
@@ -49,6 +51,7 @@
             <span class="material-icons-sharp">dark_mode</span>
         </div>
         
+<!-- Home left-aligned information bar -->        
     </header>
     <div class="container">
         <aside>
@@ -89,13 +92,11 @@
         updateTime();
     </script>
     <p></p>
-    <!-- Current Weather -->
     <h5>Weather</h5>
     <div id="weatherBody"></div>
     <script>
         async function getWeather() {
             try {
-                // Fetch current weather
                 const weatherResponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=45.5226732&lon=-122.6542858&appid=d92a6dfa33173ed676eb8b0f5c12a212&units=imperial`);
                 const weatherData = await weatherResponse.json();
                 displayCurrentWeather(weatherData);
@@ -115,7 +116,7 @@
                 </div>
             </div>
         </aside>
-
+<!-- Home Center Widget -->
         <main>
             <h1>Attendance</h1>
             <div class="subjects">
@@ -170,7 +171,7 @@
                     <small class="text-muted">Last 24 Hours</small>
                 </div>
             </div>
-
+<!-- Home Center Widget: Snapshot of different page -->
             <div class="timetable" id="timetable">
                 <div>
                     <span id="prevDay">&lt;</span>
@@ -191,7 +192,7 @@
                 </table>
             </div>
         </main>
-
+<!-- Home right-aligned information bar -->
         <div class="right">
             <div class="announcements">
                 <h2>Announcements</h2>
@@ -210,7 +211,7 @@
                     </div>
                 </div>
             </div>
-
+<!-- Home right-aligned information bar -->
             <div class="leaves">
                 <h2>Teachers on leave</h2>
                 <div class="teacher">
@@ -238,12 +239,13 @@
 
         </div>
     </div>
-
+<!-- referenced scripts -->
     <script src="timeTable.js"></script>
     <script src="app.js"></script>
 </body>
 
 </html>
+
 
 
 
