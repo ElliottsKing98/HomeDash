@@ -65,10 +65,57 @@
                     <p>29-Feb-2020</p>
                     <h5>Contact</h5>
                     <p>1234567890</p>
-                    <h5>Email</h5>
-                    <p>unknown@gmail.com</p>
-                    <h5>Address</h5>
-                    <p>Ghost town Road, New York, America</p>
+<div class="about">
+    <h5>Course</h5>
+    <p>BTech. Computer Science & Engineering</p>
+    <h5>DOB</h5>
+    <p>29-Feb-2020</p>
+    <h5>Date & Time</h5>
+    <div id="time">
+    </div>
+    <script>
+        function updateTime() {
+            const date = new Date();
+            const options = {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            };
+            const time = date.toLocaleTimeString();
+            const day = date.toLocaleDateString(undefined, options);
+            document.getElementById('time').innerHTML =
+                `${day} at ${time}`;
+        }
+
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+    <p></p>
+    <!-- Current Weather -->
+    <h5>Weather</h5>
+    <div id="weatherBody"></div>
+    <script>
+        async function getWeather() {
+            try {
+                // Fetch current weather
+                const weatherResponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=45.5226732&lon=-122.6542858&appid=d92a6dfa33173ed676eb8b0f5c12a212&units=imperial`);
+                const weatherData = await weatherResponse.json();
+                displayCurrentWeather(weatherData);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                alert('Failed to fetch weather data.');
+            }
+        }
+        
+        function displayCurrentWeather(data) {
+            const weatherBody = document.getElementById('weatherBody');
+            weatherBody.innerHTML = `Gay ${data.name} is ${data.main.temp}°F and feels like ${data.main.feels_like}°F`;
+        }
+        setInterval(getWeather, 300000);
+        getWeather();
+    </script>
+</div>
                 </div>
             </div>
         </aside>
@@ -199,4 +246,5 @@
     <script src="timeTable.js"></script>
     <script src="app.js"></script>
 </body>
+
 </html>
