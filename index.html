@@ -160,26 +160,118 @@
                 </div>
                 <div class="mth">
                     <span class="material-icons-sharp">people</span>
-                    <h3>11/11/2025</h3>
-                    <h2>Tuesday</h2>
+<h3><div id="Tuesdate"></div></h3>
+<script>
+    function updateTime() {
+        const now = new Date()
+        const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 2);
+        const day = date.toLocaleDateString();
+        document.getElementById('Tuesdate').innerHTML =
+            `${day}`;
+    }
+    setInterval(updateTime, 1000);
+    updateTime();
+</script>
+
+<h2><div id="Tuesday"></div></h2>
+<script>
+    function updateTime() {
+        const now = new Date()
+        const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 2);
+        const day = date.toLocaleDateString(undefined, { weekday: "long" });
+        document.getElementById('Tuesday').innerHTML =
+            `${day}`;
+    }
+    setInterval(updateTime, 1000);
+    updateTime();
+</script>
                     <small class="text-muted">No Steroid</small>
                 </div>
                 <div class="eg">
                     <span class="material-icons-sharp">person</span>
-                    <h3>11/12/25</h3>
-                    <h2>Wednesday</h2>
+<h3><div id="Wedndate"></div></h3>
+<script>
+    function updateTime() {
+        const now = new Date()
+        const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 3);
+        const day = date.toLocaleDateString();
+        document.getElementById('Wedndate').innerHTML =
+            `${day}`;
+    }
+    setInterval(updateTime, 1000);
+    updateTime();
+</script>
+
+<h2><div id="Wednesday"></div></h2>
+<script>
+    function updateTime() {
+        const now = new Date()
+        const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 3);
+        const day = date.toLocaleDateString(undefined, { weekday: "long" });
+        document.getElementById('Wednesday').innerHTML =
+            `${day}`;
+    }
+    setInterval(updateTime, 1000);
+    updateTime();
+</script>
                     <small class="text-muted">Steroid Day</small>
                 </div>
                 <div class="eg">
                     <span class="material-icons-sharp">person</span>
-                    <h3>11/13/25</h3>
-                    <h2>Thursday</h2>
+<h3><div id="Thurdate"></div></h3>
+<script>
+    function updateTime() {
+        const now = new Date()
+        const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 4);
+        const day = date.toLocaleDateString();
+        document.getElementById('Thurdate').innerHTML =
+            `${day}`;
+    }
+    setInterval(updateTime, 1000);
+    updateTime();
+</script>
+
+<h2><div id="Thursday"></div></h2>
+<script>
+    function updateTime() {
+        const now = new Date()
+        const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 4);
+        const day = date.toLocaleDateString(undefined, { weekday: "long" });
+        document.getElementById('Thursday').innerHTML =
+            `${day}`;
+    }
+    setInterval(updateTime, 1000);
+    updateTime();
+</script>
                     <small class="text-muted">No Steroid</small>
                 </div>
                 <div class="mth">
                     <span class="material-icons-sharp">people</span>
-                    <h3>11/14/25</h3>
-                    <h2>Friday</h2>
+<h3><div id="Fridate"></div></h3>
+<script>
+    function updateTime() {
+        const now = new Date()
+        const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 5);
+        const day = date.toLocaleDateString();
+        document.getElementById('Fridate').innerHTML =
+            `${day}`;
+    }
+    setInterval(updateTime, 1000);
+    updateTime();
+</script>
+
+<h2><div id="Friday"></div></h2>
+<script>
+    function updateTime() {
+        const now = new Date()
+        const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 5);
+        const day = date.toLocaleDateString(undefined, { weekday: "long" });
+        document.getElementById('Friday').innerHTML =
+            `${day}`;
+    }
+    setInterval(updateTime, 1000);
+    updateTime();
+</script>
                     <small class="text-muted">No Steroid</small>
                 </div>
             </div>
@@ -232,6 +324,7 @@
 </body>
 
 </html>
+
 
 
 
