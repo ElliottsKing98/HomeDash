@@ -1,5 +1,4 @@
 //Leaky's Steroid Days
-window.onload = function vblz() {
     let Mondaysteroid = "No Steroid";
     let Tuesdaysteroid = "No Steroid";
     let Wednesdaysteroid = "Steroid Day";
@@ -10,4 +9,3 @@ window.onload = function vblz() {
     document.getElementById("Wendsdee").innerHTML = Wednesdaysteroid;
     document.getElementById("Thursdee").innerHTML = Thursdaysteroid;
     document.getElementById("Fridee").innerHTML = Fridaysteroid;
-}
