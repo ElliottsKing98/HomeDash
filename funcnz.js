@@ -33,8 +33,8 @@ function updateTime() {
         }
         setInterval(getWeather, 300000);
         getWeather();
-
-//Monday time functions
+//M-F Time Functions
+//Monday
     function updateTime() {
         const now = new Date()
         const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 1);
@@ -50,6 +50,91 @@ function updateTime() {
         const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 1);
         const day = date.toLocaleDateString(undefined, { weekday: "long" });
         document.getElementById('Monday').innerHTML =
+            `${day}`;
+    }
+    setInterval(updateTime, 1000);
+    updateTime();
+// Tuesday
+    function updateTime() {
+        const now = new Date()
+        const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 2);
+        const day = date.toLocaleDateString();
+        document.getElementById('Tuesdate').innerHTML =
+            `${day}`;
+    }
+    setInterval(updateTime, 1000);
+    updateTime();
+
+    function updateTime() {
+        const now = new Date()
+        const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 2);
+        const day = date.toLocaleDateString(undefined, { weekday: "long" });
+        document.getElementById('Tuesday').innerHTML =
+            `${day}`;
+    }
+    setInterval(updateTime, 1000);
+    updateTime();
+
+// Wednesday
+
+    function updateTime() {
+        const now = new Date()
+        const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 3);
+        const day = date.toLocaleDateString();
+        document.getElementById('Wedndate').innerHTML =
+            `${day}`;
+    }
+    setInterval(updateTime, 1000);
+    updateTime();
+
+function updateTime() {
+        const now = new Date()
+        const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 3);
+        const day = date.toLocaleDateString(undefined, { weekday: "long" });
+        document.getElementById('Wednesday').innerHTML =
+            `${day}`;
+    }
+    setInterval(updateTime, 1000);
+    updateTime();
+
+//Thursday
+
+function updateTime() {
+        const now = new Date()
+        const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 4);
+        const day = date.toLocaleDateString();
+        document.getElementById('Thurdate').innerHTML =
+            `${day}`;
+    }
+    setInterval(updateTime, 1000);
+    updateTime();
+
+    function updateTime() {
+        const now = new Date()
+        const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 4);
+        const day = date.toLocaleDateString(undefined, { weekday: "long" });
+        document.getElementById('Thursday').innerHTML =
+            `${day}`;
+    }
+    setInterval(updateTime, 1000);
+    updateTime();
+
+//Friday
+    function updateTime() {
+        const now = new Date()
+        const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 5);
+        const day = date.toLocaleDateString();
+        document.getElementById('Fridate').innerHTML =
+            `${day}`;
+    }
+    setInterval(updateTime, 1000);
+    updateTime();
+
+    function updateTime() {
+        const now = new Date()
+        const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 5);
+        const day = date.toLocaleDateString(undefined, { weekday: "long" });
+        document.getElementById('Friday').innerHTML =
             `${day}`;
     }
     setInterval(updateTime, 1000);
