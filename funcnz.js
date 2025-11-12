@@ -33,3 +33,24 @@ function updateTime() {
         }
         setInterval(getWeather, 300000);
         getWeather();
+
+//Monday time functions
+    function updateTime() {
+        const now = new Date()
+        const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 1);
+        const day = date.toLocaleDateString();
+        document.getElementById('Mondate').innerHTML =
+            `${day}`;
+    }
+    setInterval(updateTime, 1000);
+    updateTime();
+
+    function updateTime() {
+        const now = new Date()
+        const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 1);
+        const day = date.toLocaleDateString(undefined, { weekday: "long" });
+        document.getElementById('Monday').innerHTML =
+            `${day}`;
+    }
+    setInterval(updateTime, 1000);
+    updateTime();
