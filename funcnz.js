@@ -1,5 +1,5 @@
 // updates time in sidebar
-function updateTime() {
+function updateTime1() {
             const date = new Date();
             const options = {
                 weekday: 'long',
@@ -13,7 +13,7 @@ function updateTime() {
                 `${day} at ${time}`;
         }
 
-        setInterval(updateTime, 1000);
+        setInterval(updateTime1, 1000);
         updateTime();
 //updates weather in sidebar
         async function getWeather() {
@@ -35,107 +35,107 @@ function updateTime() {
         getWeather();
 //M-F Time Functions
 //Monday
-    function updateTime() {
+    function updateTimeM() {
         const now = new Date()
         const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 1);
         const day = date.toLocaleDateString();
         document.getElementById('Mondate').innerHTML =
             `${day}`;
     }
-    setInterval(updateTime, 1000);
+    setInterval(updateTimeM, 1000);
     updateTime();
 
-    function updateTime() {
+    function updateTimeM1() {
         const now = new Date()
         const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 1);
         const day = date.toLocaleDateString(undefined, { weekday: "long" });
         document.getElementById('Monday').innerHTML =
             `${day}`;
     }
-    setInterval(updateTime, 1000);
+    setInterval(updateTimeM1, 1000);
     updateTime();
 // Tuesday
-    function updateTime() {
+    function updateTimeT() {
         const now = new Date()
         const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 2);
         const day = date.toLocaleDateString();
         document.getElementById('Tuesdate').innerHTML =
             `${day}`;
     }
-    setInterval(updateTime, 1000);
+    setInterval(updateTimeT, 1000);
     updateTime();
 
-    function updateTime() {
+    function updateTimeT1() {
         const now = new Date()
         const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 2);
         const day = date.toLocaleDateString(undefined, { weekday: "long" });
         document.getElementById('Tuesday').innerHTML =
             `${day}`;
     }
-    setInterval(updateTime, 1000);
+    setInterval(updateTimeT1, 1000);
     updateTime();
 
 // Wednesday
 
-    function updateTime() {
+    function updateTimeW() {
         const now = new Date()
         const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 3);
         const day = date.toLocaleDateString();
         document.getElementById('Wedndate').innerHTML =
             `${day}`;
     }
-    setInterval(updateTime, 1000);
+    setInterval(updateTimeW, 1000);
     updateTime();
 
-function updateTime() {
+function updateTimeW1() {
         const now = new Date()
         const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 3);
         const day = date.toLocaleDateString(undefined, { weekday: "long" });
         document.getElementById('Wednesday').innerHTML =
             `${day}`;
     }
-    setInterval(updateTime, 1000);
+    setInterval(updateTimeW1, 1000);
     updateTime();
 
 //Thursday
 
-function updateTime() {
+function updateTimeTh() {
         const now = new Date()
         const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 4);
         const day = date.toLocaleDateString();
         document.getElementById('Thurdate').innerHTML =
             `${day}`;
     }
-    setInterval(updateTime, 1000);
+    setInterval(updateTimeTh, 1000);
     updateTime();
 
-    function updateTime() {
+    function updateTimeTh1() {
         const now = new Date()
         const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 4);
         const day = date.toLocaleDateString(undefined, { weekday: "long" });
         document.getElementById('Thursday').innerHTML =
             `${day}`;
     }
-    setInterval(updateTime, 1000);
+    setInterval(updateTimeTh1, 1000);
     updateTime();
 
 //Friday
-    function updateTime() {
+    function updateTimeF() {
         const now = new Date()
         const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 5);
         const day = date.toLocaleDateString();
         document.getElementById('Fridate').innerHTML =
             `${day}`;
     }
-    setInterval(updateTime, 1000);
+    setInterval(updateTimeF, 1000);
     updateTime();
 
-    function updateTime() {
+    function updateTimeF1() {
         const now = new Date()
         const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 5);
         const day = date.toLocaleDateString(undefined, { weekday: "long" });
         document.getElementById('Friday').innerHTML =
             `${day}`;
     }
-    setInterval(updateTime, 1000);
+    setInterval(updateTimeF1, 1000);
     updateTime();
