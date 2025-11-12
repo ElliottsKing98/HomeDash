@@ -1,18 +1,41 @@
-//Leaky's Steroid Days
-document.getElementById("MonSte").innerHTML = `No Steroid`;
-document.getElementById("TueSte").innerHTML = `Steroid Day`;
-document.getElementById("WedSte").innerHTML = `No Steroid`;
-document.getElementById("ThurSte").innerHTML = `Steroid Day`;
-document.getElementById("FriSte").innerHTML = `No Steroid`;
-//Meal Plan List
-document.getElementById("Rogue1").innerHTML = `Butternut Squash Mac n Cheese`;
-document.getElementById("Rogue2").innerHTML = `Bruschetta Chicken`;
-document.getElementById("Rogue3").innerHTML = `Ramen w/ Tofu`;
-document.getElementById("Rogue4").innerHTML = `Beef Stew`;
-document.getElementById("Rogue5").innerHTML = `Gnochi Skillet`;
-document.getElementById("Rogue6").innerHTML = `Pita Chicken`;
-document.getElementById("Rogue7").innerHTML = `Soup & Sanmmich`;
-//Everyone's Updates
-document.getElementById("Samuel").innerHTML = `Has training on Sunday`;
-document.getElementById("Leaky").innerHTML = `Still sick and getting steroid`;
-document.getElementById("Udon").innerHTML = `Just ate, is in shed`;
+// Data for Steroid Schedule
+const steroidSchedule = {
+  MonSte: "No Steroid",
+  TueSte: "Steroid Day",
+  WedSte: "No Steroid",
+  ThurSte: "Steroid Day",
+  FriSte: "No Steroid"
+};
+
+// Data for Meal Plan
+const mealPlan = {
+  Rogue1: "Butternut Squash Mac n Cheese",
+  Rogue2: "Bruschetta Chicken",
+  Rogue3: "Ramen w/ Tofu",
+  Rogue4: "Beef Stew",
+  Rogue5: "Gnocchi Skillet",
+  Rogue6: "Pita Chicken",
+  Rogue7: "Soup & Sanmmich"
+};
+
+// Data for Updates
+const updates = {
+  Samuel: "Has training on Sunday",
+  Leaky: "Still sick and getting steroid",
+  Udon: "Just ate, is in shed"
+};
+
+// Function to update DOM
+function updateContent(data) {
+  for (const id in data) {
+    const element = document.getElementById(id);
+    if (element) {
+      element.textContent = data[id];
+    }
+  }
+}
+
+// Apply updates
+updateContent(steroidSchedule);
+updateContent(mealPlan);
+updateContent(updates);
