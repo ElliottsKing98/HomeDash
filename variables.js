@@ -4,3 +4,11 @@ document.getElementById("TueSte").innerHTML = `Steroid Day`;
 document.getElementById("WedSte").innerHTML = `No Steroid`;
 document.getElementById("ThurSte").innerHTML = `Steroid Day`;
 document.getElementById("FriSte").innerHTML = `No Steroid`;
+//Meal Plan List
+document.getElementById("Rogue1").innerHTML = `Butternut Squash Mac n Cheese`;
+document.getElementById("Rogue2").innerHTML = `Bruschetta Chicken`;
+document.getElementById("Rogue3").innerHTML = `Ramen w/ Tofu`;
+document.getElementById("Rogue4").innerHTML = `Beef Stew`;
+document.getElementById("Rogue5").innerHTML = `Gnochi Skillet`;
+document.getElementById("Rogue6").innerHTML = `Pita Chicken`;
+document.getElementById("Rogue7").innerHTML = `Soup & Sanmmich`;
