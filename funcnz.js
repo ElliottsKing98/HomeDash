@@ -14,7 +14,7 @@ function updateTime1() {
         }
 
         setInterval(updateTime1, 1000);
-        updateTime();
+        updateTime1();
 //updates weather in sidebar
         async function getWeather() {
             try {
@@ -43,7 +43,7 @@ function updateTime1() {
             `${day}`;
     }
     setInterval(updateTimeM, 1000);
-    updateTime();
+    updateTimeM();
 
     function updateTimeM1() {
         const now = new Date()
@@ -53,7 +53,7 @@ function updateTime1() {
             `${day}`;
     }
     setInterval(updateTimeM1, 1000);
-    updateTime();
+    updateTimeM1();
 // Tuesday
     function updateTimeT() {
         const now = new Date()
@@ -63,7 +63,7 @@ function updateTime1() {
             `${day}`;
     }
     setInterval(updateTimeT, 1000);
-    updateTime();
+    updateTimeT();
 
     function updateTimeT1() {
         const now = new Date()
@@ -73,7 +73,7 @@ function updateTime1() {
             `${day}`;
     }
     setInterval(updateTimeT1, 1000);
-    updateTime();
+    updateTimeT1();
 
 // Wednesday
 
@@ -85,7 +85,7 @@ function updateTime1() {
             `${day}`;
     }
     setInterval(updateTimeW, 1000);
-    updateTime();
+    updateTimeW();
 
 function updateTimeW1() {
         const now = new Date()
@@ -95,7 +95,7 @@ function updateTimeW1() {
             `${day}`;
     }
     setInterval(updateTimeW1, 1000);
-    updateTime();
+    updateTimeW1();
 
 //Thursday
 
@@ -107,7 +107,7 @@ function updateTimeTh() {
             `${day}`;
     }
     setInterval(updateTimeTh, 1000);
-    updateTime();
+    updateTimeTh();
 
     function updateTimeTh1() {
         const now = new Date()
@@ -117,7 +117,7 @@ function updateTimeTh() {
             `${day}`;
     }
     setInterval(updateTimeTh1, 1000);
-    updateTime();
+    updateTimeTh1();
 
 //Friday
     function updateTimeF() {
@@ -128,7 +128,7 @@ function updateTimeTh() {
             `${day}`;
     }
     setInterval(updateTimeF, 1000);
-    updateTime();
+    updateTimeF();
 
     function updateTimeF1() {
         const now = new Date()
@@ -138,4 +138,4 @@ function updateTimeTh() {
             `${day}`;
     }
     setInterval(updateTimeF1, 1000);
-    updateTime();
+    updateTimeF1();
