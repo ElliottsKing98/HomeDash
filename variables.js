@@ -1,28 +1,28 @@
 // Data for Steroid Schedule
 const steroidSchedule = {
-  MonSte: "No Steroid",
-  TueSte: "Steroid Day",
+  MonSte: "Steroid Day",
+  TueSte: "No Steroid",
   WedSte: "No Steroid",
-  ThurSte: "No Steroid",
-  FriSte: "Steroid"
+  ThurSte: "Steroid Day",
+  FriSte: "No Steroid"
 };
 
 // Data for Meal Plan
 const mealPlan = {
-  Rogue1: "Takeout",
-  Rogue2: "Bits",
-  Rogue3: "Thanksgiving Din",
-  Rogue4: "Thanksgiving Leftovers",
+  Rogue1: "Grilled Cheese & Tomato Soup",
+  Rogue2: "Salmon & Couscous",
+  Rogue3: "Pesto Chicken & Broccoli",
+  Rogue4: "Jar Chili & Cornbread",
   Rogue5: "Bits",
-  Rogue6: "Baked Salmon & Couscous",
+  Rogue6: "Bits",
   Rogue7: "Bits"
 };
 
 // Data for Updates
 const updates = {
-  Samuel: "A bum",
+  Samuel: "A bum, cytopoint on 11/14/25",
   Leaky: "Starting to spit out steroids",
-  Udon: "Perfect, no notes"
+  Udon: "Ate on 11/28/25 & tank cleaned on 9/27/25"
 };
 
 // Function to update DOM
