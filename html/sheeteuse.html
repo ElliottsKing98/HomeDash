@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>sheetz.js</title>
+  <meta charset="utf-8" />
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+  <script type='text/javascript'>
+    var response = [];
+
+    var publicSpreadsheetUrl =
+      'https://docs.google.com/spreadsheets/d/1G26x7xkp_RbbR4i8MsczXKhl6Wg3ktuGpoCkyiFmK90/edit?usp=sharing';
+
+    function init() {
+      Tabletop.init({
+        key: publicSpreadsheetUrl,
+        callback: showInfo,
+        simpleSheet: true
+      })
+    }
+
+    function showInfo(data, tabletop) {
+      alert('Successfully processed!')
+      console.log(data);
+    }
+
+    window.addEventListener('DOMContentLoaded', init)
+  </script>
+</head>
+
+<body>
+  <p>sheetz.js</p>
+</body>
+
+</html>
