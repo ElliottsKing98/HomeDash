@@ -8,3 +8,9 @@ Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vQEQoH_G0h3KMjMtSXhY
         console.log(data);
     }
 });
+
+export async function fetchParsedData() {
+    const parsedData = await parseFile();
+    console.log(parsedData);
+    return parsedData;
+}
