@@ -139,3 +139,43 @@ function updateTimeTh() {
     }
     setInterval(updateTimeF1, 1000);
     updateTimeF1();
+//Saturday
+    function updateTimeSa() {
+        const now = new Date()
+        const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 6);
+        const day = date.toLocaleDateString();
+        document.getElementById('Satdate').innerHTML =
+            `${day}`;
+    }
+    setInterval(updateTimeSa, 1000);
+    updateTimeSa();
+
+    function updateTimeSa1() {
+        const now = new Date()
+        const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 6);
+        const day = date.toLocaleDateString(undefined, { weekend: "long" });
+        document.getElementById('Saturday').innerHTML =
+            `${day}`;
+    }
+    setInterval(updateTimeSa1, 1000);
+    updateTimeSa1();
+//Sunday
+    function updateTimeSu() {
+        const now = new Date()
+        const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 7);
+        const day = date.toLocaleDateString();
+        document.getElementById('Sundate').innerHTML =
+            `${day}`;
+    }
+    setInterval(updateTimeSu, 1000);
+    updateTimeSu();
+
+    function updateTimeSu1() {
+        const now = new Date()
+        const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 7);
+        const day = date.toLocaleDateString(undefined, { weekend: "long" });
+        document.getElementById('Sunday').innerHTML =
+            `${day}`;
+    }
+    setInterval(updateTimeSu1, 1000);
+    updateTimeSu1();
