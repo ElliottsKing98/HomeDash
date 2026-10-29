@@ -1,2 +1,100 @@
-<script src="sheetz.js"></script>
-<script src="app.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udon Noodle Schedule</title>
+
+    <!-- 1. CSS -->
+    <style>
+        body {
+            background-color: #216B52;
+        }
+
+        #result-display {
+            width: 80%;
+            padding: 40px;
+            padding-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #7DBAA5;
+            border-radius: 5px;
+            margin-top: 10px;
+            overflow: auto;
+            word-break: break-all;
+        }
+
+        #result-text {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .profile-card {
+            width: 200px;
+            border: solid 5px #000;
+            border-radius: 5px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+
+            padding: 10px;
+        }
+    </style>
+  <!-- HTML -->
+</head>
+
+<body>
+
+    <div id="result-display">
+        <p id="result-text"></p>
+    </div>
+
+    <!-- JAVASCRIPT-->
+    <script>
+        import Papa from "https://esm.sh/papaparse@5.3.0";
+
+        // Clear Console
+        console.clear();
+
+        // Variable declarations
+        let data = undefined;
+        let display = document.getElementById("result-text");
+        let remoteFile = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQcBxCJqU4802RNg_Hr8iSkh4W6U-lQqoIt5aUg7At1FMHcoWi4CIochWxH2GY5pOCbE00Udp0zxEhZ/pub?output=csv";
+        {
+            Papa.parse(remoteFile, {
+                download: true,
+                complete: function(result) {
+                    console.log(result);
+                    data = result.data;
+                    renderData(data)
+                }
+            });
+        };
+
+        function renderData(data) {
+
+            for (let i = 1; i < data.length; i++) {
+                let card = document.createElement("div");
+                card.className = 'profile-card'
+                let html = ''
+                for (let j = 0; j < data[i].length; j++) {
+                    if (j === 0) {
+                        if (data[i][j] === '') return;
+                        html += `<h1>${data[i][j]}</h1>`
+
+                    } else {
+                        html += `<p>${data[i][j]}</p>`
+
+                    }
+                    card.innerHTML = html;
+                    display.appendChild(card);
+
+
+                }
+
+            }
+        }
+    </script>
+</body>
+
+</html>
