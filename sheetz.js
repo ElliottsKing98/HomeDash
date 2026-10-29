@@ -1,16 +1,22 @@
-const Papa = require("./papaparse.min.js");
+import Papa from "https://esm.sh/papaparse@5.3.0";
 
-Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vQEQoH_G0h3KMjMtSXhYV2FIAbJGDRQws3bksoAPKpV1kAS2y0g1DbjE6l3_opl98iwTGdwNLuqnK8Y/pub?gid=0&single=true&output=csv", {
-    download: true,
-    header: true,
-    complete: (results) => {
-        const data = results.data;
-        console.log(data);
-    }
-});
+// Clear Console
+console.clear();
 
-export async function fetchParsedData() {
-    const parsedData = await parseFile();
-    console.log(parsedData);
-    return parsedData;
+// Variable declarations
+let data = undefined;
+let display = document.getElementById("result-text");
+let remoteFile = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQEQoH_G0h3KMjMtSXhYV2FIAbJGDRQws3bksoAPKpV1kAS2y0g1DbjE6l3_opl98iwTGdwNLuqnK8Y/pub?gid=0&single=true&output=csv";
+{
+    Papa.parse(remoteFile, {
+      download: true,
+      complete: function (result) {
+        console.log(result);
+        data = result.data;
+        renderData(data)
+      }
+    });
+  };
+function renderData(data) {
+  display.innerHTML = data[0][0]
 }
