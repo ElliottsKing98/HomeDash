@@ -4,7 +4,9 @@ const steroidSchedule = {
   TueSte: "No Steroid",
   WedSte: "No Steroid",
   ThurSte: "Steroid Day",
-  FriSte: "No Steroid"
+  FriSte: "No Steroid",
+  SatSte: "No Steroid",
+  SunSte: "No Steroid"
 };
 
 // Data for Meal Plan
