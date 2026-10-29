@@ -153,7 +153,7 @@ function updateTimeTh() {
     function updateTimeSa1() {
         const now = new Date()
         const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 6);
-        const day = date.toLocaleDateString(undefined, { weekend: "long" });
+        const day = date.toLocaleDateString(undefined, { weekday: "long" });
         document.getElementById('Saturday').innerHTML =
             `${day}`;
     }
@@ -173,7 +173,7 @@ function updateTimeTh() {
     function updateTimeSu1() {
         const now = new Date()
         const date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay() + 7);
-        const day = date.toLocaleDateString(undefined, { weekend: "long" });
+        const day = date.toLocaleDateString(undefined, { weekday: "long" });
         document.getElementById('Sunday').innerHTML =
             `${day}`;
     }
