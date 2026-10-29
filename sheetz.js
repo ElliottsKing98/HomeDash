@@ -5,7 +5,7 @@ console.clear();
 
 // Variable declarations
 let data = undefined;
-let display = document.getElementById("result-text");
+let monSte = document.getElementById("monSte");
 let remoteFile = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQEQoH_G0h3KMjMtSXhYV2FIAbJGDRQws3bksoAPKpV1kAS2y0g1DbjE6l3_opl98iwTGdwNLuqnK8Y/pub?gid=0&single=true&output=csv";
 {
     Papa.parse(remoteFile, {
@@ -18,5 +18,10 @@ let remoteFile = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQEQoH_G0h3KMj
     });
   };
 function renderData(data) {
-  display.innerHTML = data[0][0]
+  //udon
+  monSteb2.innerHTML = data[1][2]
+  //leaky
+  //sam
+  //kimten
+  //shrimpz
 }
