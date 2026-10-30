@@ -18,27 +18,27 @@ let remoteFile = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQEQoH_G0h3KMj
   };
 function renderData(data) {
 //Weekday cards subnotes
-Mon-B2.innerHTML = data[1][2] // Monday Note
-Tue-B3.innerHTML = data[1][3] // Tuesday Note
-Wed-B4.innerHTML = data[1][4] // Wednesday Note
-Thur-B5.innerHTML = data[1][5] // Thursday Note
-Fri-B6.innerHTML = data[1][6] // Friday Note
-Sat-B7.innerHTML = data[1][7] // Saturday Note
-Sun-B8.innerHTML = data[1][8] // Sunday Note
+Mon_B2.innerHTML = data[1][2] // Monday Note
+Tue_B3.innerHTML = data[1][3] // Tuesday Note
+Wed_B4.innerHTML = data[1][4] // Wednesday Note
+Thur_B5.innerHTML = data[1][5] // Thursday Note
+Fri_B6.innerHTML = data[1][6] // Friday Note
+Sat_B7.innerHTML = data[1][7] // Saturday Note
+Sun_B8.innerHTML = data[1][8] // Sunday Note
 
 //Mealplan sidebar notes
-Meal-B10.innerHTML = data[1][10] // Meal1
-Meal-B11.innerHTML = data[1][11] // Meal2
-Meal-B12.innerHTML = data[1][12] // Meal3
-Meal-B13.innerHTML = data[1][13] // Meal4
-Meal-B14.innerHTML = data[1][14] // Meal5
-Meal-B15.innerHTML = data[1][15] // Meal6
-Meal-B16.innerHTML = data[1][16] // Meal7
+Meal_B10.innerHTML = data[1][10] // Meal1
+Meal_B11.innerHTML = data[1][11] // Meal2
+Meal_B12.innerHTML = data[1][12] // Meal3
+Meal_B13.innerHTML = data[1][13] // Meal4
+Meal_B14.innerHTML = data[1][14] // Meal5
+Meal_B15.innerHTML = data[1][15] // Meal6
+Meal_B16.innerHTML = data[1][16] // Meal7
 
 //Pet sidebar notes
-Sam-B18.innerHTML = data[1][18] // Samuel Note
-Lea-B19.innerHTML = data[1][19] // Leaky Note
-Udo-B20.innerHTML = data[1][20] // Udon Note
-Ktn-B21.innerHTML = data[1][21] // Kimten Note
-Shr-B22.innerHTML = data[1][22] // Shrimp Note
+Sam_B18.innerHTML = data[1][18] // Samuel Note
+Lea_B19.innerHTML = data[1][19] // Leaky Note
+Udo_B20.innerHTML = data[1][20] // Udon Note
+Ktn_B21.innerHTML = data[1][21] // Kimten Note
+Shr_B22.innerHTML = data[1][22] // Shrimp Note
 }
