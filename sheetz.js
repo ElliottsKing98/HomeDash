@@ -41,4 +41,5 @@ Lea_B19.innerHTML = data[18][2] // Leaky Note
 Udo_B20.innerHTML = data[19][2] // Udon Note
 Ktn_B21.innerHTML = data[20][2] // Kimten Note
 Shr_B22.innerHTML = data[21][2] // Shrimp Note
+Bel_B23.innerHTML = data[22][2] // Bella Note
 }
